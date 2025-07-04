@@ -157,7 +157,7 @@ class Learner():
     bn_wd:bool=True
     wd:Floats=defaults.wd
     train_bn:bool=True
-    path:str = None
+    path:Path = None
     model_dir:PathOrStr = 'models'
     callback_fns:Collection[Callable]=None
     callbacks:Collection[Callback]=field(default_factory=list)
