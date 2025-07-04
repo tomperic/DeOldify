@@ -178,7 +178,7 @@ class Learner():
     def init(self, init): apply_init(self.model, init)
 
     def _test_writeable_path(self):
-        path = self.path/self.model_dir
+        path = Path(self.path/self.model_dir)
         try:
             path.mkdir(parents=True, exist_ok=True)
             tmp_file = get_tmp_file(path)
